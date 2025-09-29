@@ -1,0 +1,434 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Use a web-safe font or link a custom one */
+    line-height: 1.6;
+    color: #fff; /* Default text color is white for dark background */
+    background-color: #000;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.main-header {
+    background-color:#fff;
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color:black;
+    
+}
+.logo-img {
+    height: 50px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav a:hover {
+    color: #ff0000; 
+}
+
+.contact-btn {
+    background-color: #ff0000; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #cc0000;
+}
+
+
+.hero-section {
+    background: url('https://thumbs.dreamstime.com/b/dynamic-synergy-people-project-management-photorealistic-linkedin-banner-showcasing-human-element-behind-311529534.jpg') no-repeat center center/cover; /* Replace with actual image path */
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    min-height: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    max-width: 800px;
+    margin: 10px auto;
+    color: #ccc;
+}
+
+
+.hiring-section {
+    padding: 50px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.hiring-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hiring-intro {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.hiring-card {
+    background-color: #222;
+    padding: 20px;
+    width: 200px; 
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border-top: 3px solid #ff0000; /* Red top border */
+}
+
+.hiring-card i {
+    font-size: 2.5em;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.hiring-card:hover {
+    background-color: #ff0000;
+    transform: translateY(-5px);
+}
+
+.hiring-card:hover i, .hiring-card:hover h4 {
+    color: #fff;
+}
+
+
+.join-form-section {
+    background-color:#fff;
+    padding: 60px 0;
+}
+
+.form-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.image-placeholder {
+    flex: 1;
+    position: relative;
+    min-height: 400px;
+    background: url('path/to/your/keyboard-image.jpg') no-repeat center center/cover; /* Replace with actual image path */
+    border-radius: 5px;
+}
+
+.img-text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.form-container {
+    flex: 1;
+    background-color: #000;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-container h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group-half, .form-group-full {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-half {
+    flex: 1 1 calc(50% - 10px); 
+}
+
+.form-group-full {
+    flex: 1 1 100%; 
+}
+
+label {
+    color: #ccc;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+}
+
+.country-code {
+    background-color: #555;
+    padding: 10px;
+    border: 1px solid #444;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+    color: #fff;
+}
+
+.phone-input input {
+    flex-grow: 1;
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+}
+
+.send-message-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.main-footer {
+    background-color: #000;
+    padding-top: 40px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-info p {
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.contact-info i {
+    color: #ff0000;
+    margin-right: 5px;
+    width: 20px; /* Align icons */
+}
+
+.links h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.links ul li a {
+    color: #aaa;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+}
+
+.links ul li a:hover {
+    color: #ff0000;
+}
+
+.social h4 {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: background-color 0.2s;
+}
+
+.social-icons a:hover {
+    background-color: #cc0000;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8em;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .main-nav {
+        display: none; 
+    }
+
+    .nav-content {
+        justify-content: space-around;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .form-layout {
+        flex-direction: column;
+    }
+
+    .image-placeholder {
+        min-height: 250px;
+        order: 2; 
+    }
+
+    .form-container {
+        order: 1;
+    }
+
+    .footer-grid {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        flex: 1 1 45%;
+    }
+
+    .contact-info p {
+        text-align: left; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    .contact-btn {
+        padding: 8px 15px;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .cards-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hiring-card {
+        width: 80%;
+    }
+
+    .form-group-half {
+        flex: 1 1 100%; 
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+    }
+}

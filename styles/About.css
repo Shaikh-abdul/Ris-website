@@ -1,0 +1,362 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      
+    }
+    nav .logo {
+      width: 50px;
+      height: 50px;
+      background: url('img/logo.png') no-repeat center/cover;
+    }
+      
+    
+        nav ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        }
+    
+        nav ul li {
+        list-style: none;
+   }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+      color: #7a2cf1;
+    }
+
+    .contact-btn {
+      background: red;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* About Banner */
+    .about-banner {
+      background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') no-repeat center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .about-banner h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about-banner p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    /* Who We Are Section */
+    .who-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 10%;
+      gap: 30px;
+    }
+
+    .who-text {
+      flex: 1;
+    }
+
+    .who-text h2 {
+      color: red;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .who-text h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #7a2cf1;
+      display: inline-block;
+      padding-bottom: 3px;
+    }
+
+    .who-text p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    .who-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .who-img img {
+      width: 60%;
+      border-radius: 10px;
+    }
+
+    /* Why Choose Us Section */
+    .choose-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 10%;
+      gap: 30px;
+      background: #f9f9f9;
+    }
+
+    .choose-text {
+      flex: 1;
+    }
+
+    .choose-text h2 {
+      color: red;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .choose-text h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #7a2cf1;
+      display: inline-block;
+      padding-bottom: 3px;
+    }
+
+    .choose-text p {
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .choose-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .choose-img img {
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    @media(max-width: 900px) {
+      .who-section, .choose-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+
+     
+ 
+        .header {
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #cc0000;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 0;
+        }
+        .header hr {
+            border: none;
+            height: 3px;
+            background-color: #cc0000;
+            width: 100px;
+            margin-top: 5px;
+            margin-left: 0;
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            
+        }
+        .card {
+            flex: 1;
+            border: 1px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           
+        }
+        .card-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 0;
+        }
+        .card-body p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+
+
+
+  
+    
+
+
+
+.testimonials{
+      background:#111112;color:#fff;padding:28px;border-radius:8px;margin-top:18px;
+    }
+    .testimonials h3{color:#fff;margin:0 0 14px 0}
+    .t-list{display:flex;gap:14px;overflow:auto;padding-bottom:8px}
+    .t-card{
+      background:rgba(255,255,255,0.06);
+      padding:16px;border-radius:8px;min-width:260px;box-shadow:none;
+    }
+    .t-card small{color:#ddd;display:block;margin-top:8px}
+    .stars{color:gold;font-size:14px}
+
+
+.footer {
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 40px 50px;
+    font-size: 14px;
+    width: 100%;
+    
+    
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-info .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #c71b1b;
+}
+
+.footer-info .logo img {
+    margin-right: 10px;
+    width: 40px;
+    
+}
+
+.contact-details p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.contact-details a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    min-width: 250px;
+}
+
+.link-column h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-column ul li {
+    margin-bottom: 8px;
+}
+
+.link-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link-column a:hover {
+    color: #c71b1b;
+}
+
+.footer-social {
+    min-width: 150px;
+}
+
+.footer-social h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c71b1b;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+}
+
+
